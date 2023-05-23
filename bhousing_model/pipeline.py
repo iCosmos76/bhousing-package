@@ -1,4 +1,5 @@
 # pipeline
+from sklearn.ensemble import GradientBoostingRegressor
 from sklearn.pipeline import Pipeline
 
 # feature scaling
@@ -16,7 +17,8 @@ bhousing_pipe = Pipeline(
             GradientBoostingRegressor(
                 learning_rate=config.model_config.learning_rate,
                 max_depth=config.model_config.max_depth,
-                n_estimators=config.model_config.n_estimators),
+                n_estimators=config.model_config.n_estimators,
+            ),
         ),
     ]
 )

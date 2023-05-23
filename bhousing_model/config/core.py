@@ -1,5 +1,5 @@
 from pathlib import Path
-from typing import List, Sequence
+from typing import List, Sequence, Union
 
 from pydantic import BaseModel
 from strictyaml import YAML, load
@@ -7,7 +7,7 @@ from strictyaml import YAML, load
 import bhousing_model
 
 # Project Directories
-PACKAGE_ROOT = Path(bhousing_model_model.__file__).resolve().parent
+PACKAGE_ROOT = Path(bhousing_model.__file__).resolve().parent
 ROOT = PACKAGE_ROOT.parent
 CONFIG_FILE_PATH = PACKAGE_ROOT / "config.yml"
 DATASET_DIR = PACKAGE_ROOT / "datasets"
@@ -34,7 +34,6 @@ class ModelConfig(BaseModel):
     target: str
     features: List[str]
     variables_to_drop: Sequence[str]
-    var_for_letter_extraction: List[str]
     learning_rate: float
     max_depth: int
     n_estimators: int
@@ -55,7 +54,7 @@ def find_config_file() -> Path:
     raise Exception(f"Config not found at {CONFIG_FILE_PATH!r}")
 
 
-def fetch_config_from_yaml(cfg_path: Path = None) -> YAML:
+def fetch_config_from_yaml(cfg_path: Union[Path, None] = None) -> YAML:
     """Parse YAML containing the package configuration."""
 
     if not cfg_path:

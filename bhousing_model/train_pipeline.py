@@ -1,12 +1,12 @@
 import logging
 from pathlib import Path
 
+import numpy as np
 from config.core import LOG_DIR, config
 from pipeline import bhousing_pipe
 from processing.data_manager import load_dataset, save_pipeline
-from sklearn.model_selection import train_test_split
-
 from sklearn.metrics import mean_squared_error
+from sklearn.model_selection import train_test_split
 
 from bhousing_model import __version__ as _version
 

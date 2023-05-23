@@ -20,6 +20,5 @@ bhousing_model/config/core.py
 bhousing_model/datasets/bhousing.csv
 bhousing_model/processing/__init__.py
 bhousing_model/processing/data_manager.py
-bhousing_model/processing/features.py
 bhousing_model/processing/validation.py
 bhousing_model/trained_models/bhousing_model_output_v0.0.1.pkl

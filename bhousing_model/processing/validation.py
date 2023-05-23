@@ -26,6 +26,7 @@ def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional
     input_data["LSTAT"] = input_data["LSTAT"].astype("float")
 
     input_data.drop(labels=config.model_config.variables_to_drop, axis=1, inplace=True)
+    input_data.drop(labels="MEDV", axis=1, inplace=True)
 
     # Columns should coinside with config.model_config.feature
     assert input_data.columns.tolist() == config.model_config.features
@@ -36,11 +37,11 @@ def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional
 
     try:
         # replace numpy nans so that pydantic can validate
-        MultipleBHousingInputs(inputs=validated_data.replace({np.nan: None}).to_dict(orient="records"))
+        MultipleBHousingInputs(inputs=relevant_data.replace({np.nan: None}).to_dict(orient="records"))
     except ValidationError as error:
         errors = error.json()
 
-    return validated_data, errors
+    return relevant_data, errors
 
 
 class BHousingInputSchema(BaseModel):
