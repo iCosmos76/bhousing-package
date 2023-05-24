@@ -3,8 +3,7 @@ include *.md
 include *.pkl
 recursive-include ./bhousing_model/*
 
-include bhousing_model/datasets/train.csv
-include bhousing_model/datasets/test.csv
+include bhousing_model/datasets/bhousing.csv
 include bhousing_model/trained_models/*.pkl
 include bhousing_model/VERSION
 include bhousing_model/config.yml

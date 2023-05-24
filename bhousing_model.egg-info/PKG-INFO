@@ -1,12 +1,11 @@
 Metadata-Version: 2.1
 Name: bhousing-model
-Version: 0.0.1
+Version: 0.0.2
 Summary: Boston Housing model package.
 Home-page: https://github.com/iCosmos76/bhousing-package
-Author: Vadim Belous
+Author: Belous Vadim
 Author-email: belous.vadim@inbox.ru
 License: BSD-3
-Platform: UNKNOWN
 Classifier: License :: OSI Approved :: MIT License
 Classifier: Programming Language :: Python
 Classifier: Programming Language :: Python :: 3

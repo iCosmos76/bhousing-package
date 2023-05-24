@@ -5,7 +5,7 @@ env LANG: en_US.UTF-8
 env LANGUAGE: 
 env TERM: xterm-256color
 env PATH: /home/kompot/bhousing-package/.tox/test_package/bin:/home/kompot/bhousing-package/venv/bin:/home/kompot/anaconda3/condabin:/home/kompot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/home/kompot/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
-env PYTHONHASHSEED: 3119022068
+env PYTHONHASHSEED: 3948208752
 env PIP_DISABLE_PIP_VERSION_CHECK: 1
 env PYTHONIOENCODING: utf-8
 env TOX_ENV_NAME: lint
@@ -14,7 +14,7 @@ env TOX_ENV_DIR: /home/kompot/bhousing-package/.tox/test_package
 env VIRTUAL_ENV: /home/kompot/bhousing-package/.tox/test_package
 env COLUMNS: 106
 env LINES: 30
-metadata pid: 362097
+metadata pid: 88998
 cwd: /home/kompot/bhousing-package
 allow: /home/kompot/bhousing-package/.tox/test_package/bin/*
 cmd: pip install -r requirements/test_requirements.txt
@@ -56,7 +56,7 @@ Collecting pytz>=2020.1 (from pandas==2.0.1->-r requirements/requirements.txt (l
 Collecting tzdata>=2022.1 (from pandas==2.0.1->-r requirements/requirements.txt (line 7))
   Using cached tzdata-2023.3-py2.py3-none-any.whl (341 kB)
 Collecting typing-extensions>=4.2.0 (from pydantic==1.10.7->-r requirements/requirements.txt (line 8))
-  Using cached typing_extensions-4.6.0-py3-none-any.whl (30 kB)
+  Using cached typing_extensions-4.6.1-py3-none-any.whl (31 kB)
 Collecting ruamel.yaml.clib>=0.2.7 (from ruamel.yaml==0.17.26->-r requirements/requirements.txt (line 9))
   Using cached ruamel.yaml.clib-0.2.7-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (485 kB)
 Collecting threadpoolctl>=2.0.0 (from scikit-learn==1.2.2->-r requirements/requirements.txt (line 10))
@@ -90,4 +90,4 @@ Collecting six>=1.5 (from python-dateutil>=2.8.2->pandas==2.0.1->-r requirements
 Collecting patsy>=0.5.2 (from statsmodels>=0.11.1->feature-engine==1.6.0->-r requirements/requirements.txt (line 1))
   Using cached patsy-0.5.3-py2.py3-none-any.whl (233 kB)
 Installing collected packages: pytz, tzdata, typing-extensions, tomli, threadpoolctl, six, ruamel.yaml.clib, pyflakes, pycodestyle, pluggy, platformdirs, pathspec, packaging, numpy, mypy-extensions, mccabe, joblib, isort, iniconfig, exceptiongroup, click, scipy, ruamel.yaml, python-dateutil, pytest, pydantic, patsy, mypy, flake8, black, strictyaml, scikit-learn, pandas, statsmodels, feature-engine
-Successfully installed black-23.3.0 click-8.1.3 exceptiongroup-1.1.1 feature-engine-1.6.0 flake8-6.0.0 iniconfig-2.0.0 isort-5.12.0 joblib-1.2.0 mccabe-0.7.0 mypy-1.3.0 mypy-extensions-1.0.0 numpy-1.24.3 packaging-23.1 pandas-2.0.1 pathspec-0.11.1 patsy-0.5.3 platformdirs-3.5.1 pluggy-1.0.0 pycodestyle-2.10.0 pydantic-1.10.7 pyflakes-3.0.1 pytest-7.3.1 python-dateutil-2.8.2 pytz-2023.3 ruamel.yaml-0.17.26 ruamel.yaml.clib-0.2.7 scikit-learn-1.2.2 scipy-1.10.1 six-1.16.0 statsmodels-0.14.0 strictyaml-1.7.3 threadpoolctl-3.1.0 tomli-2.0.1 typing-extensions-4.6.0 tzdata-2023.3
+Successfully installed black-23.3.0 click-8.1.3 exceptiongroup-1.1.1 feature-engine-1.6.0 flake8-6.0.0 iniconfig-2.0.0 isort-5.12.0 joblib-1.2.0 mccabe-0.7.0 mypy-1.3.0 mypy-extensions-1.0.0 numpy-1.24.3 packaging-23.1 pandas-2.0.1 pathspec-0.11.1 patsy-0.5.3 platformdirs-3.5.1 pluggy-1.0.0 pycodestyle-2.10.0 pydantic-1.10.7 pyflakes-3.0.1 pytest-7.3.1 python-dateutil-2.8.2 pytz-2023.3 ruamel.yaml-0.17.26 ruamel.yaml.clib-0.2.7 scikit-learn-1.2.2 scipy-1.10.1 six-1.16.0 statsmodels-0.14.0 strictyaml-1.7.3 threadpoolctl-3.1.0 tomli-2.0.1 typing-extensions-4.6.1 tzdata-2023.3
