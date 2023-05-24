@@ -42,6 +42,7 @@ def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional
 
 class BHousingInputSchema(BaseModel):
     ID: Optional[int]
+    CRIM Optional[float]
     ZN: Optional[float]
     INDUS: Optional[float]
     CHAS: Optional[float]
