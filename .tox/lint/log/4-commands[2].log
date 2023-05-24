@@ -5,7 +5,7 @@ env LANG: en_US.UTF-8
 env LANGUAGE: 
 env TERM: xterm-256color
 env PATH: /home/kompot/bhousing-package/.tox/test_package/bin:/home/kompot/bhousing-package/venv/bin:/home/kompot/anaconda3/condabin:/home/kompot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/home/kompot/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
-env PYTHONHASHSEED: 485474483
+env PYTHONHASHSEED: 116642262
 env PIP_DISABLE_PIP_VERSION_CHECK: 1
 env PYTHONIOENCODING: utf-8
 env TOX_ENV_NAME: lint
@@ -14,7 +14,7 @@ env TOX_ENV_DIR: /home/kompot/bhousing-package/.tox/test_package
 env VIRTUAL_ENV: /home/kompot/bhousing-package/.tox/test_package
 env COLUMNS: 106
 env LINES: 28
-metadata pid: 169736
+metadata pid: 190329
 cwd: /home/kompot/bhousing-package
 allow: /home/kompot/bhousing-package/.tox/test_package/bin/*
 cmd: mypy bhousing_model

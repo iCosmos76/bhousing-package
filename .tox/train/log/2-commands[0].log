@@ -5,7 +5,7 @@ env LANG: en_US.UTF-8
 env LANGUAGE: 
 env TERM: xterm-256color
 env PATH: /home/kompot/bhousing-package/.tox/test_package/bin:/home/kompot/bhousing-package/venv/bin:/home/kompot/anaconda3/condabin:/home/kompot/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/bin:/home/kompot/.dotnet/tools:/usr/lib/jvm/default/bin:/usr/bin/site_perl:/usr/bin/vendor_perl:/usr/bin/core_perl
-env PYTHONHASHSEED: 123444093
+env PYTHONHASHSEED: 3472888149
 env PIP_DISABLE_PIP_VERSION_CHECK: 1
 env PYTHONIOENCODING: utf-8
 env PYTHONPATH: .
@@ -14,13 +14,13 @@ env TOX_WORK_DIR: /home/kompot/bhousing-package/.tox
 env TOX_ENV_DIR: /home/kompot/bhousing-package/.tox/test_package
 env VIRTUAL_ENV: /home/kompot/bhousing-package/.tox/test_package
 env COLUMNS: 106
-env LINES: 30
-metadata pid: 88296
+env LINES: 28
+metadata pid: 189252
 cwd: /home/kompot/bhousing-package
 allow: /home/kompot/bhousing-package/.tox/test_package/bin/*
 cmd: python bhousing_model/train_pipeline.py
 exit_code: 0
-train RMSE: 0.7147774944780045
+train RMSE: 0.7384491064986695
 
-test RMSE: 3.7346518288962587
+test RMSE: 3.285406847706757
 
