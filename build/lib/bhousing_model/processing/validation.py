@@ -3,7 +3,7 @@ from typing import List, Optional, Tuple
 
 import numpy as np
 import pandas as pd
-from pydantic import BaseModel, ValidationError
+from pydantic import BaseModel, Field, ValidationError
 
 from bhousing_model.config.core import config
 
@@ -42,19 +42,19 @@ def validate_inputs(*, input_data: pd.DataFrame) -> Tuple[pd.DataFrame, Optional
 
 class BHousingInputSchema(BaseModel):
     ID: Optional[int]
-    CRIM Optional[float]
-    ZN: Optional[float]
-    INDUS: Optional[float]
-    CHAS: Optional[float]
-    NOX: Optional[float]
-    RM: Optional[float]
-    AGE: Optional[float]
-    DIS: Optional[float]
-    RAD: Optional[float]
-    TAX: Optional[float]
-    PTRATIO: Optional[float]
-    B: Optional[float]
-    LSTAT: Optional[float]
+    CRIM: Optional[np.float64] = Field(None, alias="CRIM")
+    ZN: Optional[np.float64] = Field(None, alias="ZN")
+    INDUS: Optional[np.float64] = Field(None, alias="INDUS")
+    CHAS: Optional[np.float64] = Field(None, alias="CHAS")
+    NOX: Optional[np.float64] = Field(None, alias="NOX")
+    RM: Optional[np.float64] = Field(None, alias="RM")
+    AGE: Optional[np.float64] = Field(None, alias="AGE")
+    DIS: Optional[np.float64] = Field(None, alias="DIS")
+    RAD: Optional[np.float64] = Field(None, alias="RAD")
+    TAX: Optional[np.float64] = Field(None, alias="TAX")
+    PTRATIO: Optional[np.float64] = Field(None, alias="PTRATIO")
+    B: Optional[np.float64] = Field(None, alias="B")
+    LSTAT: Optional[np.float64] = Field(None, alias="LSTAT")
 
 
 class MultipleBHousingInputs(BaseModel):
