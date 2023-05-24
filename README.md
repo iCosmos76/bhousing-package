@@ -43,7 +43,7 @@ pip install bhousing-model
 from bhousing_model.predict import make_prediction
 
 # Пример входных данных
-input_dict = {'ID': [7], 'CRIM': [0.08829], 'INDUS': [7.87], 'CHAS': [0.0], 
+input_dict = {'ID': [7], 'CRIM': [0.08829], 'ZN': [12.5], 'INDUS': [7.87], 'CHAS': [0.0], 
               'NOX': [0.524], 'RM': [6.012], 'AGE': [66.6], 'DIS': [5.5605], 'RAD': [5.0], 
               'TAX': [311.0], 'PTRATIO': [15.2], 'B': [395.6], 'LSTAT': [12.43]}
 
